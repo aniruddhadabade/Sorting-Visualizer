@@ -1,0 +1,78 @@
+.navbar {
+    box-shadow: 0 4px 6px rgba(139, 139, 139, 0.44);
+    border-bottom: 1px solid black;
+    padding: 0.5rem;
+}
+
+.logo {
+    max-height: 65px;
+    max-width: 55px;
+}
+
+.navbar-brand {
+    font-weight: bolder;
+    color: #ffffff;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+    background: linear-gradient(45deg, #ffd700, #d77431);
+    border-radius: 3rem;
+    margin-left: 15px;
+}
+
+.navbar-toggler:hover {
+    background: linear-gradient(45deg, #d77431, #ffd700);
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s;
+    display: flex; /* Make it a flex container */
+    align-items: center;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffd700;
+}
+
+.nav-item .nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item .nav-link .form-range {
+    margin-left: 10px;
+    width: 150px;
+}
+
+.offcanvas-header {
+    color: #ffffff;
+
+}
+
+.offcanvas-body {
+    color: #ffffff;
+
+}
+
+.btn-close {
+    color: rgb(255, 255, 255);
+    background-color: rgb(219, 216, 53);
+}
+
+.btn-close:focus, .navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.form-range {
+    width: 100%; /* Full width */
+    margin-top: 5px;
+  }
+  

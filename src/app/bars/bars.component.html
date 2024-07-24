@@ -1,0 +1,30 @@
+<app-navbar
+  (speedChange)="onSpeedChange($event)"
+  (arraySizeChange)="onArraySizeChange($event)"
+  (generateArray)="generateNewArray()"
+></app-navbar>
+
+<div class="bar-container">
+  <div *ngFor="let value of array; let i = index" class="array-bar" 
+       [ngClass]="{
+          'large': arraySize >= 40,
+          'sorted': sortedIndices.includes(i),
+          'comparing': comparingIndices.includes(i),
+          'swapping': swappingIndices.includes(i)
+        }" 
+       [style.height.px]="value * 3">
+    <div class="array-values" [ngClass]="{'x-large': arraySize >= 33}">
+      {{value}}
+    </div>
+  </div>
+</div>
+
+<div class="controls">
+  <div class="button-container">
+    <button type="button" class="btn btn-warning btn-lg" (click)="sort('bubble')">Bubble Sort</button>
+    <button type="button" class="btn btn-warning btn-lg" (click)="sort('insertion')">Insertion Sort</button>
+    <button type="button" class="btn btn-warning btn-lg" (click)="sort('selection')">Selection Sort</button>
+    <button type="button" class="btn btn-warning btn-lg" (click)="sort('merge')">Merge Sort</button>
+    <button type="button" class="btn btn-warning btn-lg" (click)="sort('quick')">Quick Sort</button>
+  </div>
+</div>

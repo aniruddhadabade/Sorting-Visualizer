@@ -1,0 +1,45 @@
+/* Container for the entire section */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Left section for the algorithm description */
+  .description {
+    width: 60%;
+    font-size: 18px;
+  }
+  
+  /* Right section for the performance details */
+  .performance {
+    width: 35%;
+    font-size: 18px;
+  }
+  
+  /* Styling for the performance headers and values */
+  .performance div {
+    margin-bottom: 10px;
+  }
+  
+  .performance strong {
+    display: inline-block;
+    width: 200px;
+  }
+  
+  /* General styling for links */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Horizontal line */
+  hr {
+    margin: 20px 0;
+    border: 1px solid #e0e0e0;
+  }
+  
